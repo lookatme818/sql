@@ -4,27 +4,39 @@
 Create a logical model for a small bookstore. 📚
 
 At the minimum it should have employee, order, sales, customer, and book entities (tables). Determine sensible column and table design based on what you know about these concepts. Keep it simple, but work out sensible relationships to keep tables reasonably sized. Include a date table. There are several tools online you can use, I'd recommend [_Draw.io_](https://www.drawio.com/) or [_LucidChart_](https://www.lucidchart.com/pages/).
+![image](https://github.com/user-attachments/assets/6d6262e0-d7e8-4480-a817-d7de01335d90)
+
 
 ## Question 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
+![image](https://github.com/user-attachments/assets/7fba8881-ee82-453c-9251-a4f433ead3c1)
+
 
 ## Question 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2?
 
 _Hint, search type 1 vs type 2 slowly changing dimensions._
 
+Type 1:
+
+![Question 3-A](https://github.com/user-attachments/assets/faefe20e-337c-4a02-8912-bb96b9f3702e)
+
+
+Type 2:
+
+![Question 3-B](https://github.com/user-attachments/assets/b5c5bfb0-1853-4d5f-b5c7-534f16738c19)
+
+
 Bonus: Are there privacy implications to this, why or why not?
-```
-Your answer...
-```
+Adding historical addresses (Type 2) can pose privacy risks, as it reveals a customer's address history, which may be sensitive information. It is essential to ensure robust data protection measures and compliance with privacy laws, such as the General Data Protection Regulation (GDPR), to protect this information.
 
 ## Question 4
 Review the AdventureWorks Schema [here](https://imgur.com/a/u0m8fX6)
 
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
-```
-Your answer...
-```
+AdventureWorks Schema is highly normalized with multiple related tables for products, addresses, and orders, making it more complex than my ERD. 
+It also contain more detailed information divided by different schemas. While my only contain those info for 1 table. 
+
 
 # Criteria
 
