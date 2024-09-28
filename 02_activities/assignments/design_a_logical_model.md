@@ -18,8 +18,12 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 _Hint, search type 1 vs type 2 slowly changing dimensions._
 
 Type 1:
+
 ![Question 3-A](https://github.com/user-attachments/assets/faefe20e-337c-4a02-8912-bb96b9f3702e)
+
+
 Type 2:
+
 ![Question 3-B](https://github.com/user-attachments/assets/b5c5bfb0-1853-4d5f-b5c7-534f16738c19)
 
 
@@ -30,9 +34,9 @@ Adding historical addresses (Type 2) can pose privacy risks, as it reveals a cus
 Review the AdventureWorks Schema [here](https://imgur.com/a/u0m8fX6)
 
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
-```
-Your answer...
-```
+AdventureWorks Schema is highly normalized with multiple related tables for products, addresses, and orders, making it more complex than my ERD. 
+It also contain more detailed information divided by different schemas. While my only contain those info for 1 table. 
+
 
 # Criteria
 
