@@ -17,10 +17,14 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 
 _Hint, search type 1 vs type 2 slowly changing dimensions._
 
+Type 1:
+![Question 3-A](https://github.com/user-attachments/assets/faefe20e-337c-4a02-8912-bb96b9f3702e)
+Type 2:
+![Question 3-B](https://github.com/user-attachments/assets/b5c5bfb0-1853-4d5f-b5c7-534f16738c19)
+
+
 Bonus: Are there privacy implications to this, why or why not?
-```
-Your answer...
-```
+Adding historical addresses (Type 2) can pose privacy risks, as it reveals a customer's address history, which may be sensitive information. It is essential to ensure robust data protection measures and compliance with privacy laws, such as the General Data Protection Regulation (GDPR), to protect this information.
 
 ## Question 4
 Review the AdventureWorks Schema [here](https://imgur.com/a/u0m8fX6)
